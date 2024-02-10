@@ -6,27 +6,34 @@
 - npm or yarn installed
 
 ## Installation
-Server : 
 
 1. Clone the repository:
 
     ```bash
-    https://github.com/Gaurimusmade/W3Dev-Assignment.git
+   git clone https://github.com/Gaurimusmade/W3Dev-Assignment.git
     ```
 
 2. Change into the project directory:
 
     ```bash
+    cd W3Dev-Assignment
+    ```
+    
+Server : 
+
+1. Change into the backend directory:
+
+    ```bash
     cd Backend
     ```
-
-3. Install dependencies:
+    
+2. Install dependencies:
 
     ```bash
     npm install
     ```
     
-4. Start the server:
+3. Start the server:
 
     ```bash
     npm start
@@ -34,17 +41,18 @@ Server :
 
  React app:
 
-1. Change into the project directory:
+1. Change into the frontend directory:
 
     ```bash
     cd Frontend
     ```
-
+    
 2. Install dependencies:
 
     ```bash
     npm install
     ```
+    
 3. Start the React app:
 
      ```bash
