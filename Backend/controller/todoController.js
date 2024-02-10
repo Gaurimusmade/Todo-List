@@ -4,8 +4,6 @@ const Todo = require('../models/todoModel');
 module.exports.getTodo = async (req, res) => {
     try {
         const todo = await Todo.getallTodo();
-        if (todo.length == 0)
-            res.status(404).json({ message: "Not found any task" });
         res.status(200).json(todo);
     } catch (err) {
         res.status(500).json({ error: "Internal server error" });
