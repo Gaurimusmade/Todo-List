@@ -24,7 +24,7 @@ const addnew = async (task: string, setTasks: React.Dispatch<React.SetStateActio
     });
 
     if (res.ok) {
-      setTasks((prev) => [...prev, { _id: 'some_unique_id', task }]); // replace 'some_unique_id' with the actual unique identifier
+      getall(setTasks);
       console.log('Todo added successfully.');
     } else {
       console.error('Failed to add todo.');
@@ -47,7 +47,7 @@ const updateTask = async (
         'Content-Type': 'application/json',
       },
     });
-
+     console.log("update id :=",id)
     if (res.ok) {
       setTasks((prevTasks) => {
         return prevTasks.map((task) => {
@@ -65,6 +65,7 @@ const updateTask = async (
 
 const deletetask = async (id: string, setTasks: React.Dispatch<React.SetStateAction<Task[]>>): Promise<void> => {
   try {
+    console.log(id)
     const res = await fetch('http://localhost:5002/todo/delete', {
       method: 'DELETE',
       body: JSON.stringify({ id }),

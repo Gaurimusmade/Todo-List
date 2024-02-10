@@ -33,7 +33,8 @@ module.exports.updateTask = async (t) => {
 //Delete Task
 module.exports.deleteTask = async (id) => {
     try {
-        const deletetask = await Todo.findByIdAndDelete(id);
+        console.log(id)
+        const deletetask = await Todo.findByIdAndDelete(id); 
         return true;
     } catch (err) {
         throw err;
