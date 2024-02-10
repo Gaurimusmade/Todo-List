@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from 'react';
-import { updateTask, deletetask } from '../handleHttp/APi.js'
+import { updateTask, deletetask } from '../handleHttp/Api'
 
 interface TaskProps {
   tasktext: string;

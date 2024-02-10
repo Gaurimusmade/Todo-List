@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Task from './Task';
-import { getall, addnew } from '../handleHttp/Api.js'
+import { getall, addnew } from '../handleHttp/Api.ts'
 
 interface TaskType {
   _id: string;
