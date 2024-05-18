@@ -1,4 +1,4 @@
-# W3Dev-Assignment
+# Todo-List
 
 ## Prerequisites
 
@@ -10,13 +10,13 @@
 1. Clone the repository:
 
     ```bash
-   git clone https://github.com/Gaurimusmade/W3Dev-Assignment.git
+   git clone https://github.com/Gaurimusmade/Todo-List.git
     ```
 
 2. Change into the project directory:
 
     ```bash
-    cd W3Dev-Assignment
+    cd Todo-List
     ```
     
 Server : 
